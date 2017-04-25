@@ -7,7 +7,7 @@
 3. [Pinmux](#pinmux) 
 4. [External Interrupt](#external-interrupt) 
 
-# **Base function**
+# Base function
 
 ## **print**
 
@@ -21,9 +21,9 @@
 ### 返回值
 Undefined
 
-# **GPIO**
+# GPIO
 
-## **首先需要使用requre导入GPIO库**
+## 首先需要使用requre导入GPIO库
     var gpio = require('gpio');
 
 ## **gpio.open**
@@ -94,8 +94,8 @@ Undefined
 ### 返回值
 成功返回true, 失败返回false
 
-# **Pinmux**
-## **首先需要使用requre导入Pinmux库**
+# Pinmux
+## 首先需要使用requre导入Pinmux库
     var pinmux = require('pinmux');
 
 ## **pinmux.set**
@@ -108,8 +108,8 @@ Undefined
 | 引脚号    | number      | 必须      |                                      |
 | 功能号    | number      | 必须      | 详情查阅芯片手册                     |
 
-# **External Interrupt**
-## **首先需要使用requre导入External Interrupt库**
+# External Interrupt
+## 首先需要使用requre导入External Interrupt库
     var extint = require('extint');
 
 ## extint.pin2eint
