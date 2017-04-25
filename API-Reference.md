@@ -1,7 +1,7 @@
-# API ²Î¿¼ÎÄµµ
+# API å‚è€ƒæ–‡æ¡£
 
 ---
-# Ä¿Â¼
+# ç›®å½•
 1. [Base Fcuntion](#base-function)
 2. [GPIO](#gpio)
 3. [Pinmux](#pinmux) 
@@ -11,163 +11,163 @@
 
 ## **print**
 
-### ËµÃ÷
-> ½«ÐÅÏ¢´òÓ¡µ½ÖÕ¶ËÉÏ
+### è¯´æ˜Ž
+> å°†ä¿¡æ¯æ‰“å°åˆ°ç»ˆç«¯ä¸Š
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |
 |-----------|-------------|-----------|
-| ´òÓ¡Êý¾Ý  | ËùÓÐÀàÐÍ    | ±ØÐë      |
-### ·µ»ØÖµ
+| æ‰“å°æ•°æ®  | æ‰€æœ‰ç±»åž‹    | å¿…é¡»      |
+### è¿”å›žå€¼
 Undefined
 
 # GPIO
 
-## Ê×ÏÈÐèÒªÊ¹ÓÃrequreµ¼ÈëGPIO¿â
+## é¦–å…ˆéœ€è¦ä½¿ç”¨requreå¯¼å…¥GPIOåº“
     var gpio = require('gpio');
 
 ## **gpio.open**
-### ËµÃ÷
-> ´ò¿ªÒ»¸öÒý½Å£¬»ñµÃ`pinobj`£¬Í¨¹ý¸Ã`pinobj`¿ØÖÆÒý½Å¶ÁÐ´
+### è¯´æ˜Ž
+> æ‰“å¼€ä¸€ä¸ªå¼•è„šï¼ŒèŽ·å¾—`pinobj`ï¼Œé€šè¿‡è¯¥`pinobj`æŽ§åˆ¶å¼•è„šè¯»å†™
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |
 |-----------|-------------|-----------|
-| Òý½ÅºÅ    | number      | ±ØÐë      |
+| å¼•è„šå·    | number      | å¿…é¡»      |
 
-### ·µ»ØÖµ
-Èç¹û³É¹¦·µ»ØÒý½Å¶ÔÏó`pinobj`£¬·ñÔò·µ»Øfalse
+### è¿”å›žå€¼
+å¦‚æžœæˆåŠŸè¿”å›žå¼•è„šå¯¹è±¡`pinobj`ï¼Œå¦åˆ™è¿”å›žfalse
 
 ## **pinobj.pinnum**
-### ËµÃ÷
-> »ñÈ¡¸Ãpinobj¶ÔÏóµÄÒý½ÅºÅ
+### è¯´æ˜Ž
+> èŽ·å–è¯¥pinobjå¯¹è±¡çš„å¼•è„šå·
 
-### ²ÎÊý
-ÎÞ
+### å‚æ•°
+æ— 
 
-### ·µ»ØÖµ
-¸Ãpinobj¶ÔÏóµÄÒý½ÅºÅ
+### è¿”å›žå€¼
+è¯¥pinobjå¯¹è±¡çš„å¼•è„šå·
 
 ## **pinobj.read**
-### ËµÃ÷
-> ´ÓÒý½ÅÉÏ¶ÁµçÆ½ÐÅºÅ£¬ÔÚ´ËÖ®Ç°Çë×¢ÒâÓÃ[pinobj.direction('in')](#pinobjdirection)ÉèÖÃÒý½ÅÎªÊäÈëÄ£Ê½
+### è¯´æ˜Ž
+> ä»Žå¼•è„šä¸Šè¯»ç”µå¹³ä¿¡å·ï¼Œåœ¨æ­¤ä¹‹å‰è¯·æ³¨æ„ç”¨[pinobj.direction('in')](#pinobjdirection)è®¾ç½®å¼•è„šä¸ºè¾“å…¥æ¨¡å¼
 
-### ²ÎÊý
-ÎÞ
+### å‚æ•°
+æ— 
 
-### ·µ»ØÖµ
-Èç¹ûÒý½ÅÎª¸ßµçÆ½·µ»Øtrue£¬Èç¹ûÎªµÍµçÆ½·µ»Øfalse£¬Èç¹û¶ÁÈ¡Ê§°Ü·µ»ØUndefined
+### è¿”å›žå€¼
+å¦‚æžœå¼•è„šä¸ºé«˜ç”µå¹³è¿”å›žtrueï¼Œå¦‚æžœä¸ºä½Žç”µå¹³è¿”å›žfalseï¼Œå¦‚æžœè¯»å–å¤±è´¥è¿”å›žUndefined
 
 ## **pinobj.write**
-### ËµÃ÷
-> Í¨¹ýÒý½ÅÐ´µçÆ½ÐÅºÅ£¬ÔÚ´ËÖ®Ç°Çë×¢ÒâÓÃ[pinobj.direction('out')](#pinobjdirection)ÉèÖÃÒý½ÅÎªÊä³öÄ£Ê½
+### è¯´æ˜Ž
+> é€šè¿‡å¼•è„šå†™ç”µå¹³ä¿¡å·ï¼Œåœ¨æ­¤ä¹‹å‰è¯·æ³¨æ„ç”¨[pinobj.direction('out')](#pinobjdirection)è®¾ç½®å¼•è„šä¸ºè¾“å‡ºæ¨¡å¼
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                 |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                 |
 |-----------|-------------|-----------|--------------------------------------|
-| µçÆ½Öµ    | boolean     | ±ØÐë      | ¸ßµçÆ½Ê¹ÓÃtrue£¬µÍµçÆ½Ê¹ÓÃfalse      |
+| ç”µå¹³å€¼    | boolean     | å¿…é¡»      | é«˜ç”µå¹³ä½¿ç”¨trueï¼Œä½Žç”µå¹³ä½¿ç”¨false      |
 
-### ·µ»ØÖµ
-³É¹¦·µ»Øtrue£¬Ê§°Ü·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸè¿”å›žtrueï¼Œå¤±è´¥è¿”å›žfalse
 
 ## **pinobj.pull**
-### ËµÃ÷
-> ÉèÖÃÄÚ²¿ÉÏÀ­/ÏÂÀ­
+### è¯´æ˜Ž
+> è®¾ç½®å†…éƒ¨ä¸Šæ‹‰/ä¸‹æ‹‰
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                 |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                 |
 |-----------|-------------|-----------|--------------------------------------|
-| Ä£Ê½      | string      | ±ØÐë      | 'up'¡¢'down' »òÕß 'none'             |
+| æ¨¡å¼      | string      | å¿…é¡»      | 'up'ã€'down' æˆ–è€… 'none'             |
 
-### ·µ»ØÖµ
-³É¹¦·µ»Øtrue, Ê§°Ü·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸè¿”å›žtrue, å¤±è´¥è¿”å›žfalse
 
 ## **pinobj.direction**
-### ËµÃ÷
-> ÉèÖÃI/O·½Ïò
+### è¯´æ˜Ž
+> è®¾ç½®I/Oæ–¹å‘
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                 |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                 |
 |-----------|-------------|-----------|--------------------------------------|
-| ·½Ïò      | string      | ±ØÐë      | 'in' »òÕß 'out'                      |
+| æ–¹å‘      | string      | å¿…é¡»      | 'in' æˆ–è€… 'out'                      |
 
-### ·µ»ØÖµ
-³É¹¦·µ»Øtrue, Ê§°Ü·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸè¿”å›žtrue, å¤±è´¥è¿”å›žfalse
 
 # Pinmux
-## Ê×ÏÈÐèÒªÊ¹ÓÃrequreµ¼ÈëPinmux¿â
+## é¦–å…ˆéœ€è¦ä½¿ç”¨requreå¯¼å…¥Pinmuxåº“
     var pinmux = require('pinmux');
 
 ## **pinmux.set**
-### ËµÃ÷
-> ÉèÖÃÒý½Å¸´ÓÃ
+### è¯´æ˜Ž
+> è®¾ç½®å¼•è„šå¤ç”¨
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                 |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                 |
 |-----------|-------------|-----------|--------------------------------------|
-| Òý½ÅºÅ    | number      | ±ØÐë      |                                      |
-| ¹¦ÄÜºÅ    | number      | ±ØÐë      | ÏêÇé²éÔÄÐ¾Æ¬ÊÖ²á                     |
+| å¼•è„šå·    | number      | å¿…é¡»      |                                      |
+| åŠŸèƒ½å·    | number      | å¿…é¡»      | è¯¦æƒ…æŸ¥é˜…èŠ¯ç‰‡æ‰‹å†Œ                     |
 
 # External Interrupt
-## Ê×ÏÈÐèÒªÊ¹ÓÃrequreµ¼ÈëExternal Interrupt¿â
+## é¦–å…ˆéœ€è¦ä½¿ç”¨requreå¯¼å…¥External Interruptåº“
     var extint = require('extint');
 
 ## extint.pin2eint
-### ËµÃ÷
-> ´«ÈëÒý½ÅºÅ£¬·µ»Ø¸ÃÒý½ÅÉÏµÄÍâ²¿ÖÐ¶ÏºÅ
+### è¯´æ˜Ž
+> ä¼ å…¥å¼•è„šå·ï¼Œè¿”å›žè¯¥å¼•è„šä¸Šçš„å¤–éƒ¨ä¸­æ–­å·
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                 |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                 |
 |-----------|-------------|-----------|--------------------------------------|
-| Òý½ÅºÅ    | number      | ±ØÐë      |                                      |
+| å¼•è„šå·    | number      | å¿…é¡»      |                                      |
 
-### ·µ»ØÖµ
-³É¹¦£¬·µ»ØÒý½Å¶ÔÓ¦µÄÍâ²¿ÖÐ¶ÏºÅ£»Ê§°Ü£¬·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸï¼Œè¿”å›žå¼•è„šå¯¹åº”çš„å¤–éƒ¨ä¸­æ–­å·ï¼›å¤±è´¥ï¼Œè¿”å›žfalse
 
 
 ## **extint.init**
-### ËµÃ÷
-> ³õÊ¼»¯Íâ²¿ÖÐ¶Ï
+### è¯´æ˜Ž
+> åˆå§‹åŒ–å¤–éƒ¨ä¸­æ–­
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                        |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                        |
 |-----------|-------------|-----------|---------------------------------------------|
-| Íâ²¿ÖÐ¶ÏºÅ| number      | ±ØÐë      | ¿ÉÊ¹ÓÃ[extint.pin2eint](#extintpin2eint)»ñÈ¡|
-| ´¥·¢Ä£Ê½  | string      | ±ØÐë      | ¼ûÏÂ·½±í¸ñ                                  |
-| Ïû¶¶Ê±¼ä  | number      | ±ØÐë      | Èô½ûÓÃÏû¶¶£¬¸Ã²ÎÊýÌî0                       |
+| å¤–éƒ¨ä¸­æ–­å·| number      | å¿…é¡»      | å¯ä½¿ç”¨[extint.pin2eint](#extintpin2eint)èŽ·å–|
+| è§¦å‘æ¨¡å¼  | string      | å¿…é¡»      | è§ä¸‹æ–¹è¡¨æ ¼                                  |
+| æ¶ˆæŠ–æ—¶é—´  | number      | å¿…é¡»      | è‹¥ç¦ç”¨æ¶ˆæŠ–ï¼Œè¯¥å‚æ•°å¡«0                       |
 
-´¥·¢Ä£Ê½
+è§¦å‘æ¨¡å¼
 
-|  ´¥·¢Ä£Ê½  |    ²ÎÊýÖµ    |
+|  è§¦å‘æ¨¡å¼  |    å‚æ•°å€¼    |
 |------------|--------------|
-| µÍµçÆ½´¥·¢ | "low_level"  |
-| ¸ßµçÆ½´¥·¢ | "high_level" |
-| ÏÂ½µÑØ´¥·¢ | "fall_edge"  |
-| ÉÏÉýÑØ´¥·¢ | "rise_edge"  |
-| Ë«±ßÑØ´¥·¢ | "both_edge"  |
+| ä½Žç”µå¹³è§¦å‘ | "low_level"  |
+| é«˜ç”µå¹³è§¦å‘ | "high_level" |
+| ä¸‹é™æ²¿è§¦å‘ | "fall_edge"  |
+| ä¸Šå‡æ²¿è§¦å‘ | "rise_edge"  |
+| åŒè¾¹æ²¿è§¦å‘ | "both_edge"  |
 
-### ·µ»ØÖµ
-³É¹¦·µ»Øtrue£¬Ê§°Ü·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸè¿”å›žtrueï¼Œå¤±è´¥è¿”å›žfalse
 
 ## **extint.register**
-### ËµÃ÷
-> ×¢²á»Øµ÷º¯Êý
+### è¯´æ˜Ž
+> æ³¨å†Œå›žè°ƒå‡½æ•°
 
-### ²ÎÊý
-|   ²ÎÊýÃû  |     ÀàÐÍ    | ¿ÉÑ¡/±ØÐë |                 ËµÃ÷                        |
+### å‚æ•°
+|   å‚æ•°å  |     ç±»åž‹    | å¯é€‰/å¿…é¡» |                 è¯´æ˜Ž                        |
 |-----------|-------------|-----------|---------------------------------------------|
-| Íâ²¿ÖÐ¶ÏºÅ| number      | ±ØÐë      | ¿ÉÊ¹ÓÃ[extint.pin2eint](#extintpin2eint)»ñÈ¡|
-| »Øµ÷º¯Êý  | function    | ±ØÐë      | ¸Ã»Øµ÷º¯Êý²»´«²ÎÊý                          |
+| å¤–éƒ¨ä¸­æ–­å·| number      | å¿…é¡»      | å¯ä½¿ç”¨[extint.pin2eint](#extintpin2eint)èŽ·å–|
+| å›žè°ƒå‡½æ•°  | function    | å¿…é¡»      | è¯¥å›žè°ƒå‡½æ•°ä¸ä¼ å‚æ•°                          |
 
-### ·µ»ØÖµ
-³É¹¦·µ»Ø extint_callback_handler£¬Ê§°Ü·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸè¿”å›žè¯¥å›žè°ƒçš„æŽ§åˆ¶å™¨`extint_callback_handler`ï¼Œå¤±è´¥è¿”å›žfalse
 
 ## **extint_callback_handler.kill**
-### ËµÃ÷
-> É¾³ýÕâ¸ö»Øµ÷
+### è¯´æ˜Ž
+> åˆ é™¤è¿™ä¸ªå›žè°ƒ
 
-### ²ÎÊý
-ÎÞ
+### å‚æ•°
+æ— 
 
-### ·µ»ØÖµ
-³É¹¦·µ»Øtrue£¬Ê§°Ü·µ»Øfalse
+### è¿”å›žå€¼
+æˆåŠŸè¿”å›žtrueï¼Œå¤±è´¥è¿”å›žfalse
